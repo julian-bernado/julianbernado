@@ -2,46 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian Bernado</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            background-color: white;
+        }
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 40px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            text-transform: lowercase;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 0;
+        }
+        /* Main Content */
+        .main-content {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+        }
+        .main-content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .main-content h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .main-content h3 {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .main-content .cta {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        /* Profile Image */
+        .profile-image {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+        }
+        .profile-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* Social Media Icons */
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            margin: 0 15px;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">me</a></li>
-            <li><a href="thoughts.html">thoughts</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">me</a></li>
+            <li><a href="#">thoughts</a></li>
         </ul>
     </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="intro">
-            <h1>JULIAN BERNADO</h1>
-            <p>I’m a second-year Statistics Ph.D. student at the University of Michigan.</p>
-            <p><em>I distinguish correlation from causation.</em></p>
-            <p>Connect with me.</p>
-
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/julian-b-782531162/" target="_blank">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.twitter.com/juliangpt" target="_blank">
-                    <img src="images/x.png" alt="X (Twitter)">
-                </a>
-                <a href="mailto:bernado@umich.edu">
-                    <img src="images/email.png" alt="Email">
-                </a>
-            </div>
+    <hr>
+    <!-- Main Section -->
+    <div class="main-content">
+        <h1>JULIAN BERNADO</h1>
+        <h2>I'm a second-year Statistics Ph.D. student at the University of Michigan.</h2>
+        <h3><em>I distinguish correlation from causation.</em></h3>
+        <p class="cta">Connect with me.</p>
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/julianbernado">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/julianbernado">
+                <img src="twitter.png" alt="X (Twitter)">
+            </a>
+            <a href="mailto:julian.bernado@example.com">
+                <img src="email.png" alt="Email">
+            </a>
         </div>
-
-        <div class="profile-img">
-            <img src="images/profile.jpg" alt="Julian Bernado">
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Julian Bernado">
         </div>
     </div>
-
 </body>
 </html>
